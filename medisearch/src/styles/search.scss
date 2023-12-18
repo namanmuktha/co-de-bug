@@ -1,0 +1,107 @@
+.search {
+  font-size: 30px;
+}
+
+.searching {
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+li {
+  cursor: pointer;
+}
+input {
+  border: thin black;
+  border-radius: 40px;
+  padding: 20px;
+  background-color: rgba(240, 238, 238, 0.651);
+  width: 400px;
+  height: 50px;
+}
+
+.card {
+  width: 18rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add your box shadow here */
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for a smoother effect */
+  height: 9rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover if desired */
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+}
+
+/* Add this to your existing styles or create a new section for tooltips */
+
+.description-tooltip {
+  position: relative;
+}
+
+.description-button {
+  display: inline-block;
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove borders */
+  padding: 8px 16px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer */
+}
+.tooltip-text {
+  border: 1px solid black;
+  padding: 10px;
+  width: 500px;
+  font-size: 12px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease-in-out;
+}
+
+.tooltip-text.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+// .description-button:hover + .tooltip-text {
+//   visibility: visible;
+//   opacity: 1;
+//   max-height: 700px;
+// }
+
+.info1 {
+  height: 11 rem;
+}
